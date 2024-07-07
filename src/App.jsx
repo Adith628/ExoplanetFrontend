@@ -17,7 +17,7 @@ function App() {
     try {
       console.log(formData);
       const response = await axios.post(
-        "http://localhost:8000/api/predict/",
+        "https://miniprojectbackend-2iul.onrender.com/predict",
         formData,
         {
           headers: {
