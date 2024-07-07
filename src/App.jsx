@@ -93,7 +93,7 @@ function App() {
                     Learn More
                   </Link>
                 </button>
-                <button className="border px-6 py-3 rounded-full bg-gray-800/10 hover:bg-gray-800/30">
+                <button className="border px-6 py-3 rounded-full border-gray-600 bg-gray-800/10 hover:bg-gray-800/30">
                   <Link to="demo" smooth={true} duration={1000}>
                     Demo
                   </Link>
@@ -184,7 +184,7 @@ function App() {
             </div>
           ) : results.length !== 0 ? (
             <div className="p-8">
-              <div className="text-xl border-b border-gray-700 mb-4 pb-2">
+              <div className="text-2xl  font-semibold  border-b border-gray-700 mb-4 pb-4">
                 Prediction Results
               </div>
 
@@ -207,7 +207,7 @@ function App() {
                 {results.map((result, index) => (
                   <div
                     key={index}
-                    className="p-4 bg-gray-900 rounded-lg w-full flex gap-2 whitespace-nowrap px-5 justify-between items-center"
+                    className="p-4 hover:scale-105 transition-all duration-200 bg-gray-900 rounded-lg w-full flex gap-2 whitespace-nowrap px-5 justify-between items-center"
                   >
                     <h2 className="text-md font-bold">{result.kepoi_name}</h2>
                     <p
@@ -224,6 +224,13 @@ function App() {
           ) : null}
         </div>
       </Element>
+      <footer className="bg-black text-gray-500 py-4 border-t border-gray-700">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} AstroNet. All rights reserved.
+          </p>
+        </div>
+      </footer>
 
       <Cursor />
     </div>
