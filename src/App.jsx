@@ -129,7 +129,7 @@ function App() {
           </div>
           <div className="p-10 flex flex-col gap-5">
             <h3 className="text-3xl font-semibold">
-              Features selected for trainig
+              Features selected for training
             </h3>
             <ul className="list-disc flex flex-col h-[350px] flex-wrap   list-inside text-lg space-y-2">
               {Object.entries(features).map(([key, value]) => (
