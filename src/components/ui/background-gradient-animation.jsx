@@ -161,7 +161,7 @@ export const BackgroundGradientAnimation = ({
           )}
         ></div>
 
-        {/* {interactive && (
+        {interactive && (
           <div
             ref={interactiveRef}
             onMouseMove={handleMouseMove}
@@ -171,7 +171,7 @@ export const BackgroundGradientAnimation = ({
               `opacity-70`
             )}
           ></div>
-        )} */}
+        )}
       </div>
     </div>
   );
